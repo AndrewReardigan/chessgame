@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Chess Board</title>
+    <link href="style.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <img src="./img/knight.webp" />
+      <h1>This is my Chess Game.</h1>
+      <img src="./img/knight2.webp" />
+    </header>
+    <main>
+      <!-- <article class="help-guide">
+          
+            <h1>Guidelines on how to play</h1>
+            <a class="whitepiece">&#x2656;</a>
+            <h3>Rook</h3>
+            <p>Rook chess pieces can only directly forward one square, with two exceptions.
+              Pawns can move directly forward two squares on their first move only.
+              Pawns can move diagonally forward when capturing an opponent's chess piece.</p>
+        
+          
+
+          
+            <h3>Knight</h3>
+            <p>The Knight piece can move forward, backward, left or right two squares and must then move one square in either perpendicular direction.
+              The Knight piece can only move to one of up to eight positions on the board.
+              The Knight piece can move to any position not already inhabited by another piece of the same color.
+              The Knight piece can skip over any other pieces to reach its destination position.</p>
+          
+            
+      </article>
+       -->
+
+
+
+
+
+
+    <div class="tablecloth">
+      <div class="board">
+        <div row="8" col="a" class="box light-square" userPlayer="black" piece="rook">
+          <a>&#x265C;</a>
+        </div>
+        <div row="8" col="b" class="box dark-square" userPlayer="black" piece="knight">
+          <a>&#x265E;</a>
+        </div>
+        <div row="8" col="c" class="box light-square" userPlayer="black" piece="bishop">
+          <a>&#x265D;</a>
+        </div>
+        <div row="8" col="d" class="box dark-square" userPlayer="black" piece="queen">
+          <a>&#x265B;</a>
+        </div>
+        <div row="8" col="e" class="box light-square" userPlayer="black" piece="king">
+          <a>&#x265A;</a>
+        </div>
+        <div row="8" col="f" class="box dark-square" userPlayer="black" piece="bishop">
+          <a>&#x265D;</a>
+        </div>
+        <div row="8" col="g" class="box light-square" userPlayer="black" piece="knight">
+          <a>&#x265E;</a>
+        </div>
+        <div row="8" col="h" class="box dark-square" userPlayer="black" piece="rook">
+          <a>&#x265C;</a>
+        </div>
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <div row="7" col="a" class="box dark-square" userPlayer="black" piece="pawn">
+          <a>&#x265F;</a>
+        </div>
+        <div row="7" col="b" class="box light-square" userPlayer="black" piece="pawn">
+          <a>&#x265F;</a>
+        </div>
+        <div row="7" col="c" class="box dark-square" userPlayer="black" piece="pawn">
+          <a>&#x265F;</a>
+        </div>
+        <div row="7" col="d" class="box light-square" userPlayer="black" piece="pawn">
+          <a>&#x265F;</a>
+        </div>
+        <div row="7" col="e" class="box dark-square" userPlayer="black" piece="pawn">
+          <a>&#x265F;</a>
+        </div>
+        <div row="7" col="f" class="box light-square" userPlayer="black" piece="pawn">
+          <a>&#x265F;</a>
+        </div>
+        <div row="7" col="g" class="box dark-square" userPlayer="black" piece="pawn">
+          <a>&#x265F;</a>
+        </div>
+        <div row="7" col="h" class="box light-square" userPlayer="black" piece="pawn">
+          <a>&#x265F;</a>
+        </div>
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <div row="6" col="a" class="box light-square"></div>
+        <div row="6" col="b" class="box dark-square"></div>
+        <div row="6" col="c" class="box light-square"></div>
+        <div row="6" col="d" class="box dark-square"></div>
+        <div row="6" col="e" class="box light-square"></div>
+        <div row="6" col="f" class="box dark-square"></div>
+        <div row="6" col="g" class="box light-square"></div>
+        <div row="6" col="h" class="box dark-square"></div>
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <div row="5" col="a" class="box dark-square"></div>
+        <div row="5" col="b" class="box light-square"></div>
+        <div row="5" col="c" class="box dark-square"></div>
+        <div row="5" col="d" class="box light-square"></div>
+        <div row="5" col="e" class="box dark-square"></div>
+        <div row="5" col="f" class="box light-square"></div>
+        <div row="5" col="g" class="box dark-square"></div>
+        <div row="5" col="h" class="box light-square"></div>
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <div row="4" col="a" class="box light-square"></div>
+        <div row="4" col="b" class="box dark-square"></div>
+        <div row="4" col="c" class="box light-square"></div>
+        <div row="4" col="d" class="box dark-square"></div>
+        <div row="4" col="e" class="box light-square"></div>
+        <div row="4" col="f" class="box dark-square"></div>
+        <div row="4" col="g" class="box light-square"></div>
+        <div row="4" col="h" class="box dark-square"></div>
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <div row="3" col="a" class="box dark-square"></div>
+        <div row="3" col="b" class="box light-square"></div>
+        <div row="3" col="c" class="box dark-square"></div>
+        <div row="3" col="d" class="box light-square"></div>
+        <div row="3" col="e" class="box dark-square"></div>
+        <div row="3" col="f" class="box light-square"></div>
+        <div row="3" col="g" class="box dark-square"></div>
+        <div row="3" col="h" class="box light-square"></div>
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <div row="2" col="a" class="box light-square">
+            <a class ="whitepawn" click="myFunction()">&#x2659;</a>
+        </div>
+        <div row="2" col="b" class="box dark-square">
+            <a class="whitepawn" click="myFunction()">&#x2659;</a>
+        </div>
+        <div row="2" col="c" class="box light-square">
+            <a class="whitepawn" click="myFunction()">&#x2659;</a>
+        </div>
+        <div row="2" col="d" class="box dark-square">
+            <a class="whitepawn" click="myFunction()">&#x2659;</a>
+        </div>
+        <div row="2" col="e" class="box light-square">
+            <a class="whitepawn" click ="myFunction()">&#x2659;</a>
+        </div>
+        <div row="2" col="f" class="box dark-square">
+            <a class="whitepawn" click=function>&#x2659;</a>
+        </div>
+        <div row="2" col="g" class="box light-square">
+          <a class="whitepawn" click="myFunction()">&#x2659;</a>
+        </div>
+        <div row="2" col="h" class="box dark-square">
+          <a class="whitepawn">&#x2659;</a>
+        </div>
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <div row="1" col="a" class="box dark-square">
+          <a class="whitepiece">&#x2656;</a>
+        </div>
+        <div row="1" col="b" class="box light-square">
+          <a class="whitepiece">&#x2658;</a>
+        </div>
+        <div row="1" col="c" class="box dark-square">
+          <a class="whitepiece">&#x2657;</a>
+        </div>
+        <div row="1" col="d" class="box light-square">
+          <a class="whitepiece">&#x2655;</a>
+        </div>
+        <div row="1" col="e" class="box dark-square">
+          <a class="whitepiece">&#x2654;</a>
+        </div>
+        <div row="1" col="f" class="box light-square">
+          <a class="whitepiece">&#x2657;</a>
+        </div>
+        <div row="1" col="g" class="box dark-square">
+          <a class="whitepiece">&#x2658;</a>
+        </div>
+        <div row="1" col="h" class="box light-square">
+          <a class="whitepiece">&#x2656;</a>
+        </div>
+      </div>
+
+      
+    </main>
+    <script src="chess.js"></script>
+  </body>
+</html>

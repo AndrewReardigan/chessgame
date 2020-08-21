@@ -1,0 +1,91 @@
+* {
+  margin: auto;
+}
+
+body {
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; */
+
+  background-image: url("./img/wallpaper.jpg");
+}
+
+header {
+  display: flex;
+  width: 100%;
+  background-image: url(./img/stone.jpeg);
+
+  font-family: "ZCOOL XiaoWei", serif;
+  padding: 1rem;
+  margin-bottom: 30px;
+}
+
+main {
+  display: flex;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+/* .box:hover {
+  background-color: lime;
+} */
+.box {
+  width: 60px;
+  height: 60px;
+}
+body .light-square {
+  background-color: whitesmoke;
+}
+
+body .dark-square {
+  background-color: grey;
+}
+
+.tablecloth {
+  background-color: lightskyblue;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+h1 {
+  background-color: white;
+  padding: 1rem;
+}
+
+div .box {
+  display: flex;
+}
+
+a {
+  font-size: 60px;
+  padding: 0px;
+
+  margin: 0px;
+}
+
+.instructions {
+  font-family: "Lily Script One", cursive;
+
+  background-color: ivory;
+}
+article {
+  font-family: "Lily Script One", cursive;
+  color: rgb(49, 49, 48);
+  background: whitesmoke;
+}
+.help-guide {
+  display: flex;
+  max-width: 300px;
+  overflow-y: auto;
+  flex-direction: column;
+
+  padding: 0.6rem;
+  margin: 0.3rem;
+  border-radius: 10px;
+
+  border: 5px solid #e7b613f1;
+}
